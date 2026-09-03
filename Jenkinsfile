@@ -5,8 +5,9 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/Ankit-Singh-21/java-demo.git'
-            }
+            git branch: 'main',
+            url: 'https://github.com/Ankit-Singh-21/java-demo.git'
+          }
         }
 
         stage('Compile') {
